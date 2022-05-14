@@ -1,12 +1,7 @@
-# stage 1 (Build image)
-
-# pulling base image
-FROM node:16 as node
-# Setting the remote DIR to /app
-WORKDIR /
-# COPY the current folder
-COPY . .
-# run npm i (install all the dependencies)
+FROM node:alpine
+WORKDIR /app
+COPY package.json ./
+COPY package-lock.json ./
+COPY ./ ./
 RUN npm install
-# this will generate dist
-RUN npm run build --prod
+CMD ["npm","run","start"]
