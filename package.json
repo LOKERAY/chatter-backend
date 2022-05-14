@@ -14,5 +14,9 @@
     "express": "^4.18.1",
     "mongoose": "^6.3.3",
     "pusher": "^5.1.0-beta"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
   }
 }
