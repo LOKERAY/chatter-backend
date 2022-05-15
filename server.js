@@ -93,11 +93,11 @@ app.post('/messages/new',(req, res) => {
 // listen
 
 app.listen(port,()=> console.log(`Listening on Local Host: ${port} `))
-const Sentry = require("@sentry/node");
+const Sentry = import("@sentry/node");
 // or use es6 import statements
 // import * as Sentry from '@sentry/node';
 
-const Tracing = require("@sentry/tracing");
+const Tracing =import("@sentry/tracing");
 // or use es6 import statements
 // import * as Tracing from '@sentry/tracing';
 
