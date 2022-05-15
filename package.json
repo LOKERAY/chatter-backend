@@ -11,6 +11,8 @@
   "author": "prathik",
   "license": "ISC",
   "dependencies": {
+    "@sentry/node": "^6.19.7",
+    "@sentry/tracing": "^6.19.7",
     "express": "^4.18.1",
     "mongoose": "^6.3.3",
     "pusher": "^5.1.0-beta"
